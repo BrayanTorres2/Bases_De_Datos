@@ -9,8 +9,6 @@ Este repositorio contiene apuntes del la Unidad De estudio [Base de Datos](https
 
 &nbsp;
 
-![](https://img.shields.io/github/stars/DanielGB00/fundamentos-BD.svg) ![](https://img.shields.io/github/forks/DanielGB00/fundamentos-BD.svg) ![](https://img.shields.io/github/tag/DanielGB00/fundamentos-BD.svg) ![](https://img.shields.io/github/release/DanielGB00/fundamentos-BD.svg) ![](https://img.shields.io/github/issues/DanielGB00/fundamentos-BD.svg) ![](https://img.shields.io/bower/v/fundamentos-BD.svg )
-
 ## TABLA DE CONTENIDOS
 - [CONCEPTOS BÁSICOS Y CONTEXTO HISTÓRICO](#CONCEPTOS-BÁSICOS-Y-CONTEXTO-HISTÓRICO)
   - [Historia del almacenamiento de la información](#Historia-del-almacenamiento-de-la-información)
