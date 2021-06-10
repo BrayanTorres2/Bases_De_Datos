@@ -3,7 +3,7 @@
 </div>
 
 Este repositorio contiene apuntes del la Unidad De estudio [Base de Datos](https://virtual.universidadean.edu.co/ "Base de Datos"). El curso es dictado por [Brayan Torres](https://www.linkedin.com/in/brayantorres/ "Brayan Torres")
-##Propósito del Curso
+<h2>Propósito del Curso</h2>
 <p>La base de datos como un componente de los sistemas de información debe tener una definición clara y precisa entendiendo la importancia del repositorio de datos, como esta definido, cual es su rendimiento ,como se accede y escala. Se abordaran bases de datos SQL y NoSQL como servicio o como componente entendiendo que la forma de operar los sistemas de información ha cambiado y las bases de datos deben estar totalmente articuladas al esquema que soporta las organización hoy por hoy.</p>
 
 <div align="center"> <img src="Imágenes/1_logo.png" alt="" width="350px" height="350px"> </div>
