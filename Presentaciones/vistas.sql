@@ -81,3 +81,29 @@
  select *from sysobjects
   where xtype='V' and-- tipo vista
   name like 'vista%';--búsqueda con comodín
+  
+  
+  
+  Las vistas son objetos, así que para obtener información de ellos pueden usarse los siguientes procedimientos almacenados del sistema:
+
+"sp_help" sin parámetros nos muestra todos los objetos de la base de datos seleccionada, incluidas las vistas. En la columna "Object_type" aparece "view" si es una vista. Si le enviamos como argumento el nombre de una vista, obtenemos la fecha de creación, propietario, los campos y demás información.
+
+"sp_helptext" seguido del nombre de una vista nos muestra el texto que la define, excepto si ha sido encriptado.
+
+Ejecutando "sp_depends" seguido del nombre de un objeto, obtenemos 2 resultados:
+
+- nombre, tipo, campos, etc. de los objetos de los cuales depende el objeto nombrado y
+
+- nombre y tipo de los objetos que dependen del objeto nombrado.
+
+Si ejecutamos el procedimiento "sp_depends" seguido del nombre de una vista:
+
+ exec sp_depends vista_empleados;
+aparecen las tablas (y demás objetos) de las cuales depende la vista, es decir, las tablas referenciadas en la misma.
+
+Si ejecutamos el procedimiento seguido del nombre de una tabla:
+
+ exec sp_depends empleados;
+aparecen los objetos que dependen de la tabla, vistas, restricciones, etc.
+
+También se puede consultar la tabla del sistema "sysobjects":
