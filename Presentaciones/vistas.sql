@@ -86,7 +86,8 @@
   
   Las vistas son objetos, así que para obtener información de ellos pueden usarse los siguientes procedimientos almacenados del sistema:
 
-"sp_help" sin parámetros nos muestra todos los objetos de la base de datos seleccionada, incluidas las vistas. En la columna "Object_type" aparece "view" si es una vista. Si le enviamos como argumento el nombre de una vista, obtenemos la fecha de creación, propietario, los campos y demás información.
+"sp_help" sin parámetros nos muestra todos los objetos de la base de datos seleccionada, incluidas las vistas. En la columna "Object_type" aparece "view"
+si es una vista. Si le enviamos como argumento el nombre de una vista, obtenemos la fecha de creación, propietario, los campos y demás información.
 
 "sp_helptext" seguido del nombre de una vista nos muestra el texto que la define, excepto si ha sido encriptado.
 
