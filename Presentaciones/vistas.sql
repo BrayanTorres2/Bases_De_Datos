@@ -8,7 +8,7 @@
  );
 
  create table empleados(
-  legajo int identity,
+  legajo int GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),,
   documento char(8)
    constraint CK_empleados_documento check (documento like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
   sexo char(1)
