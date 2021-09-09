@@ -1,6 +1,6 @@
 
  create table secciones(
-  codigo tinyint GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+  codigo tinyint identity,
   nombre varchar(20),
   sueldo decimal(5,2)
   constraint CK_secciones_sueldo check (sueldo>=0),
@@ -8,7 +8,7 @@
  );
 
  create table empleados(
-  legajo int GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),,
+  legajo int identity,
   documento char(8)
    constraint CK_empleados_documento check (documento like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
   sexo char(1)
@@ -49,12 +49,14 @@
 --Creamos la vista "vista_empleados", que es resultado de una combinación en la cual se muestran 5 campos:
 
  create view vista_empleados as
-  select (apellido+' '+e.nombre) as nombre,sexo,
-   s.nombre as seccion, cantidadhijos
+  select (e.apellido+' '+e.nombre) as 'nombre',sexo,
+   s.nombre as 'seccion', e.cantidadhijos
    from empleados as e
    join secciones as s
    on codigo=seccion;
 --Vemos la información de la vista:
+select * from empleados
+select *from secciones
 
  select * from vista_empleados;
 --Ejecutamos "sp_help" enviándole como argumento el nombre de la vista:
@@ -80,10 +82,9 @@
 
  select *from sysobjects
   where xtype='V' and-- tipo vista
-  name like 'vista%';--búsqueda con comodín
+  name like '%vista_empleados%';--búsqueda con comodín
   
-  
-  
+  *
   Las vistas son objetos, así que para obtener información de ellos pueden usarse los siguientes procedimientos almacenados del sistema:
 
 "sp_help" sin parámetros nos muestra todos los objetos de la base de datos seleccionada, incluidas las vistas. En la columna "Object_type" aparece "view"
@@ -108,3 +109,4 @@ Si ejecutamos el procedimiento seguido del nombre de una tabla:
 aparecen los objetos que dependen de la tabla, vistas, restricciones, etc.
 
 También se puede consultar la tabla del sistema "sysobjects":
+
