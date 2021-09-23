@@ -74,3 +74,73 @@ SELECT SalesPersonID, TotalDue
   FROM [Sales].[vIndividualCustomer]
   WHERE LastName LIKE '%r'
 --23
+SELECT Color, COUNT(*) AS Productos
+  FROM [Production].[Product]
+  WHERE COLOR IS NOT NULL
+  GROUP BY color
+  HAVING COUNT(Color) >=20
+ --24
+ SELECT SUM(i.Quantity * p.ListPrice) AS Ganancia
+  FROM [Production].[Product] as p
+  JOIN [Production].[ProductInventory] as i
+  ON p.ProductID = i.ProductID
+  WHERE p.ListPrice > 0
+--25
+SELECT [FirstName], [LastName], EmailPromotion =
+	CASE
+		WHEN EmailPromotion = 0 then 'Promo 1'
+		WHEN EmailPromotion = 1 then 'Promo 2'
+		WHEN EmailPromotion = 2 then 'Promo 3'
+	END
+  FROM [Person].[Person]
+--26
+SELECT t.Name, p.[BusinessEntityID], p.[SalesYTD]
+  FROM [Sales].[SalesPerson] as p
+  LEFT JOIN [Sales].[SalesTerritory] as t
+  ON p.TerritoryID = t.TerritoryID
+--27
+SELECT pe.FirstName,pe.LastName,t.Name, p.[BusinessEntityID], p.[SalesYTD]
+  FROM [Sales].[SalesPerson] as p
+  LEFT JOIN [Sales].[SalesTerritory] as t
+  ON p.TerritoryID = t.TerritoryID
+  JOIN Person.Person as pe
+  ON p.BusinessEntityID = pe.BusinessEntityID
+  WHERE t.Name = 'Northeast' or t.Name = 'Central'
+  --28
+  SELECT p.FirstName, p.LastName, pa.PasswordHash
+  FROM [Person].[Person] as p
+  JOIN Person.Password as pa
+  ON p.BusinessEntityID = pa.BusinessEntityID
+--29
+SELECT FirstName,title =
+	CASE
+		WHEN Title IS NULL then 'No hay titulo'
+		WHEN Title IS NOT NULL then Title
+	END
+  FROM [Person].[Person]
+--30
+SELECT FirstName,MiddleName =
+	CASE
+		WHEN MiddleName IS NULL then CONCAT(FirstName, ' ', LastName)
+		WHEN MiddleName IS NOT NULL then CONCAT(FirstName, ' ', MiddleName, ' ', LastName)
+	END
+  FROM [Person].[Person]
+--31
+SELECT [ProductID], MakeFlag =
+	CASE
+		WHEN MakeFlag = FinishedGoodsFlag then NULL
+		WHEN NOT MakeFlag = FinishedGoodsFlag then 'Iguales'
+	END
+  FROM [Production].[Product]
+--32
+SELECT [ProductID], Color =
+	CASE
+		WHEN Color IS NOT NULL then Color
+		WHEN Color IS NULL then 'Sin color'
+	END
+  FROM [Production].[Product]
+SELECT ProductID, ISNULL(Color, 'Sin color')
+  FROM [Production].[Product]
+
+
+ 
