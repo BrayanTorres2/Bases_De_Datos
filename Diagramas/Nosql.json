@@ -1,7 +1,7 @@
 show dbs
 use peliculas
 show dbs
-db.peliculas.insert({"Doc1":"Rapido y furioso"})#Insertar
+db.peliculas.insert({"Doc1":"Rapido y furioso"})"__comment":"Insertar"
 db.peliculas.find()#Consulta
 db.peliculas.find().pretty()#Vertical
 db.peliculas.insertMan([{"pelicula":"Avergers","annio":2009,"categoria":"accion"},{"pelicula":"Gol","categoria":"deportes"}])# insertar varios objetos
