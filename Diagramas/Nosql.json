@@ -80,3 +80,4 @@ db.peliculas.deleteOne({"_id":ObjectId("61848c0df2190751207e8c65")})}
 db.peliculas.deleteOne({})
 db.peliculas.deleteMany({})
 show collections
+https://charlascylon.com/2013-07-18-tutorial-mongodb-operaciones-de-actualizaci%C3%B3n-de
