@@ -1,0 +1,40 @@
+show dbs
+use peliculas
+show dbs
+db.peliculas.insert({"Doc1":"Rapido y furioso"})#Insertar
+db.peliculas.find()#Consulta
+db.peliculas.find().pretty()#Vertical
+db.peliculas.insertMan([{"pelicula":"Avergers","annio":2009,"categoria":"accion"},{"pelicula":"Gol","categoria":"deportes"}])# insertar varios objetos
+db.peliculas.find()
+db.peliculas.find({"pelicula":"Gol"})
+db.peliculas.find({"pelicula":"Gol"},{"_id":0,"categoria":0})
+db.peliculas.inserMany({"pelicula":"Gol","categoria":deportes},{"pelicula":"Avatar","categoria":"Aventura"})
+db.peliculas.insertMany([{"pelicula":"Gol", "categoria":"deportes"},{"pelicula":"Avatar","annio": 2005, "categoria":"ciencia ficcion"}])
+db.peliculas.find().pretty()
+"""
+debe aparece asi
+{
+        "_id" : ObjectId("61848c60163d417972c33144"),
+        "pelicula" : "Avergers",
+        "annio" : 2009,
+        "categoria" : "accion"
+}
+{
+        "_id" : ObjectId("61848c60163d417972c33145"),
+        "pelicula" : "Gol",
+        "categoria" : "deportes"
+}
+{
+        "_id" : ObjectId("61848e6a163d417972c33146"),
+        "pelicula" : "Gol",
+        "categoria" : "deportes"
+}
+{
+        "_id" : ObjectId("61848e6a163d417972c33147"),
+        "pelicula" : "Avatar",
+        "annio" : 2005,
+        "categoria" : "ciencia ficcion"
+}
+
+
+"""
