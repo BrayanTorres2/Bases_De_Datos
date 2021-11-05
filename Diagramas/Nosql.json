@@ -71,4 +71,4 @@ db.peliculas.replaceOne({"Doc1":"Rapido y furioso"},{"pelicula":"Rapido y furios
 }
 db.peliculas.replaceOne({"pelicula":"Rapido y furioso"},{"pelicula":"Rapido y furioso", "annio": 2002},{upsert:false})
 db.peliculas.update({"pelicula":"Gol"},{"pelicula":"Gol", "annio": 2005, "categoria":"deportes"})
-
+db.peliculas.update({"pelicula":"Rapido y furioso"},{$set:{"pelicula":"Rapido y furioso", "annio": 2005, "categoria":"accion"}},{upsert:true, multi:true})
