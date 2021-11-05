@@ -1,7 +1,9 @@
+mongod.exe
+mongo
 show dbs
 use peliculas
 show dbs
-db.peliculas.insert({"Doc1":"Rapido y furioso"})"__comment":"Insertar"
+db.peliculas.insert({"Doc1":"Rapido y furioso"})#Insertar
 db.peliculas.find()#Consulta
 db.peliculas.find().pretty()#Vertical
 db.peliculas.insertMan([{"pelicula":"Avergers","annio":2009,"categoria":"accion"},{"pelicula":"Gol","categoria":"deportes"}])# insertar varios objetos
@@ -38,3 +40,33 @@ debe aparece asi
 
 
 """
+db.peliculas.replaceOne({"Doc1":"Rapido y furioso"},{"pelicula":"Rapido y furioso", "annio": 2000},{upsert:true})
+
+{
+        "_id" : ObjectId("61848c60163d417972c33144"),
+        "pelicula" : "Avergers",
+        "annio" : 2009,
+        "categoria" : "accion"
+}
+{
+        "_id" : ObjectId("61848c60163d417972c33145"),
+        "pelicula" : "Gol",
+        "categoria" : "deportes"
+}
+{
+        "_id" : ObjectId("61848e6a163d417972c33146"),
+        "pelicula" : "Gol",
+        "categoria" : "deportes"
+}
+{
+        "_id" : ObjectId("61848e6a163d417972c33147"),
+        "pelicula" : "Avatar",
+        "annio" : 2005,
+        "categoria" : "ciencia ficcion"
+}
+{
+        "_id" : ObjectId("618490e69c65f1d346ff41de"),
+        "pelicula" : "Rapido y furioso",
+        "annio" : 2000
+}
+
