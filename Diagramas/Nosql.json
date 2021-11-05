@@ -75,4 +75,4 @@ db.peliculas.update({"pelicula":"Rapido y furioso"},{$set:{"pelicula":"Rapido y 
 db.peliculas.find().count()
 db.peliculas.find().limit()
 db.peliculas.find()[4]
-
+db.peliculas.find({"_id":ObjectId("61848c0df2190751207e8c64")},{"_id":1,"annio":0,"categoria":0})
