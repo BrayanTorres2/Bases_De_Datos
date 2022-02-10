@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="tarea" id="B05F8D36-A5C6-1BF9-BFBC-8F8A86C66B8D" version="3.5">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 16:30:39 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B05F8D36-A5C6-1BF9-BFBC-8F8A86C66B8D</designId>
+</OSDM_Design>
