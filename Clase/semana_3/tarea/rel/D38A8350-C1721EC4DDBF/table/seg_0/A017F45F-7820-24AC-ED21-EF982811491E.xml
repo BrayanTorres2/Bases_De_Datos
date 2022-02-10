@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A017F45F-7820-24AC-ED21-EF982811491E" name="ALUMNO">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<generatorID>7C96062F-8940-1763-959E-9C165996E33F</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estudiante" id="1D6BE523-DE52-C4A1-04EB-632072E2307A">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<generatorID>B151D3F2-0EE1-7E88-F854-BF79C3374149</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="programa" id="6F65A4E0-3359-2507-B8FD-BFE417329294">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<generatorID>E5C838D3-D3B1-8BF1-B9AD-E1E85E0ECC71</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSONA_cc" id="778E9F99-ABE6-CCC3-C6D9-5F5853896A1A">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<generatorID>F72F939B-BF8C-D4FD-ADAD-EC6CC6F47E7F</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E799127F-1698-9369-7546-51840DAA18D4" referredColumn="9B55F29C-BB7D-6EF1-3C97-2A37A680BBFF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD6369C3-26E4-4BFC-FFDE-479A20942E65" name="ALUMNO_PK">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<generatorID>D11DED28-13BC-13B0-EE63-91FEFE7A2503</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D6BE523-DE52-C4A1-04EB-632072E2307A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E5C50F9-26E0-FBEC-21B9-6DFFEAAD8901" name="ALUMNO__IDX">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>6797F838-63AD-9128-3E32-0F024E8DBF4F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="778E9F99-ABE6-CCC3-C6D9-5F5853896A1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A207ACA0-7D58-5003-216A-080E9EF75F69" name="ALUMNO_PERSONA_FK">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<generatorID>6797F838-63AD-9128-3E32-0F024E8DBF4F</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="778E9F99-ABE6-CCC3-C6D9-5F5853896A1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

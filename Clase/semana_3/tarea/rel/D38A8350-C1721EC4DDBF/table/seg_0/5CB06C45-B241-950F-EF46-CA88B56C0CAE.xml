@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5CB06C45-B241-950F-EF46-CA88B56C0CAE" name="Alumno_Curso">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ALUMNO_id_estudiante" id="71116D41-2EB8-8D83-B67F-481B829ABF06">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A569741-C982-AD11-F54E-0D7434167C77" referredColumn="1D6BE523-DE52-C4A1-04EB-632072E2307A"/>
+</associations>
+</Column>
+<Column name="CURSO_id_curso" id="48276477-8706-C36D-3AFE-6F08C97A9372">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80A00A7B-030F-9A8E-E016-C46392313CBB" referredColumn="59449B87-C127-1CD4-28E4-7848F4AD5841"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55F64F51-5EDA-818A-1DDB-95896A8A5D0B" name="Alumno_Curso_PK">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<ownerDesignName>tarea</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71116D41-2EB8-8D83-B67F-481B829ABF06"/>
+<colUsage columnID="48276477-8706-C36D-3AFE-6F08C97A9372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24E9D68E-C95E-8F1F-452F-C025F2E63C6D" name="Alumno_Curso_ALUMNO_FK">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<generatorID>15DD45A9-53C8-6269-C01A-888434EE736A</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71116D41-2EB8-8D83-B67F-481B829ABF06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36E7929C-EEC0-AEC2-643C-167379E71C14" name="Alumno_Curso_CURSO_FK">
+<createdBy>braya</createdBy>
+<createdTime>2022-02-10 17:16:54 UTC</createdTime>
+<generatorID>15DD45A9-53C8-6269-C01A-888434EE736A</generatorID>
+<ownerDesignName>tarea</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48276477-8706-C36D-3AFE-6F08C97A9372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
