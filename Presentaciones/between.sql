@@ -3,7 +3,7 @@ if object_id ('libros') is not null
 Creamos la tabla:
 
  create table libros(
-  codigo int identity,
+  codigo int identity,#GENERATED ALWAYS AS IDENTITY
   titulo varchar(40) not null,
   autor varchar(20) default 'Desconocido',
   editorial varchar(20),
