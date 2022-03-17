@@ -7,9 +7,9 @@ http://dia-installer.de/
 #Sql Server
 Tutorial: https://www.youtube.com/watch?v=YOaC_TyOrdk
 -Motor
- https://www.microsoft.com/es-es/sql-server/sql- server-downloads
+ https://www.microsoft.com/es-es/sql-server/sql-server-downloads
 -SQL Server Management Studio
- https://docs.microsoft.com/es-es/sql/ssms/download-  sql-server-management-studio-ssms?  redirectedfrom=MSDN&view=sql-server-ver15
+ https://docs.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?  redirectedfrom=MSDN&view=sql-server-ver15
 
 #AdventureWorks
 https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms
