@@ -1,0 +1,24 @@
+const database = 'Compañia';
+const collection = 'empresa';
+
+// Create a new database.
+use(database);
+
+// Create a new collection.
+//db.createCollection(collection);
+
+
+db.empresa.drop();
+db.empresa.insertMany([
+  {'nombre': "Empresa 1",'direccion' : "Calle 1",'telefono' : "123456789",'fecha_de_creacion': new Date('2020-03-01T08:00:00Z')}, 
+  {'nombre': "Empresa 2",'direccion' : "Calle 2",'telefono' : "987654321",'fecha_de_creacion': new Date('2022-03-01T08:00:00Z')},
+  {'nombre': "Empresa 3",'direccion' : "Calle 3",'telefono' : "123456789",'fecha_de_creacion': new Date('2000-03-01T08:00:00Z')},
+  {'nombre': "Empresa 4",'direccion' : "Calle 4",'telefono' : "987654321",'fecha_de_creacion': new Date('2001-03-01T08:00:00Z')},
+  {'nombre': "Empresa 5",'direccion' : "Calle 5",'telefono' : "123456789",'fecha_de_creacion': new Date('2014-03-01T08:00:00Z')},
+  {'nombre': "Empresa 6",'direccion' : "Calle 6",'telefono' : "987654321",'fecha_de_creacion': new Date('2010-03-01T08:00:00Z')},
+  {'nombre': "Empresa 7",'direccion' : "Calle 7",'telefono' : "123456789",'fecha_de_creacion': new Date('2011-03-01T08:00:00Z')},
+  {'nombre': "Empresa 8",'direccion' : "Calle 8",'telefono' : "987654321",'fecha_de_creacion': new Date('2008-03-01T08:00:00Z')},
+  {'nombre': "Empresa 9",'direccion' : "Calle 9",'telefono' : "123456789",'fecha_de_creacion': new Date('2004-03-01T08:00:00Z')},
+  {'nombre': "Empresa 10",'direccion' : "Calle 10",'telefono' : "987654321",'fecha_de_creacion': new Date('2019-03-01T08:00:00Z')},
+]);
+db.empresa.find()
