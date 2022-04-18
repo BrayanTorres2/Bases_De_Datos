@@ -1,0 +1,39 @@
+Pasos Para instalacion de Mongodb
+
+1.ir al siguiente enlace y descargar mongodbCommunity en su version 5.0.7 https://www.mongodb.com/try/download/community
+2.darle siguiente
+3. aceptar terminos y condiciones
+4.darle en la version Custom (personalizada)
+5. solo habiliar el server y el cliente lo demas darle Entire will be unavailable
+6. desactivar el install MongoDb as Service(para que no este disponible todo el timepo)
+7. desactivar Install MongoDB Compass
+8. siguiente
+
+----------------------------------------------------------------
+pasos para usar el mongo.exe-->cliente y  mongod.exe--->el servidor
+1. abrimos editar las variables de entorno del sistema
+2. click en el boton variables de entorno
+3. click en path del usuario-->click en editar
+4  click en nueva y copiamos la ruta de mongo ->C:\Program Files\MongoDB\Server\5.0\bin
+5. abril cmd 
+6. escribir el nombre del servidor-> mongod
+7. crear una carpera llamada data
+8. dentro de la carpeta crear una carperta llamada db
+9. volver a escribir el servidor->mongod
+-------------------------------------------------------------
+Saber si quedo bien
+1. en otro cmd escribir mongo
+2.  show databases
+-----------------------------------------------------------
+conexion en visual 
+1. darle nueva connection
+2. escribir el puerto de escucha que es mongodb://127.0.0.1:27017 omongodb://localhost 
+
+
+
+
+
+
+
+
+apoyo con el siguiente video https://www.youtube.com/watch?v=q1LLot41V5Q
