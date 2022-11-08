@@ -14,7 +14,7 @@ pasos para usar el mongo.exe-->cliente y  mongod.exe--->el servidor
 1. abrimos editar las variables de entorno del sistema
 2. click en el boton variables de entorno
 3. click en path del usuario-->click en editar
-4  click en nueva y copiamos la ruta de mongo ->C:\Program Files\MongoDB\Server\5.0\bin
+4  click en nueva y copiamos la ruta de mongo ->C:\Program Files\MongoDB\Server\6.0\bin
 5. abril cmd 
 6. escribir el nombre del servidor-> mongod
 7. crear una carpera llamada data
